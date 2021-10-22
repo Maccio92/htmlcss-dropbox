@@ -8,10 +8,12 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 body{width: 100%;}
-header{
-    width: 100%;
+
+.header{
     position: fixed;
-    height: 5em;
+    background-color: white;
+    width: 100%;
+    height: 4em;
 }
 .clearfix::after{    
     content: "";
@@ -24,32 +26,82 @@ header{
 .menu-dx, .login{float: right;}
 
 .col-logo{ 
-    line-height: 5.5em;
-    padding: 0 2em;
+    margin: 1em 2em;
+    
 }
-
 
 /* Menu */
 li.border-bottom, li.hover-menu{
     list-style-type: none;
     display: inline-block;
     text-align: center;
-    line-height: 5em;
-    margin-right: 2em;  
+    line-height: 3.8em;
+    margin-right: 1em;  
 }
 .border-bottom a, .hover-menu a {
     text-decoration: none;
     color: black ;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 0.8em;
 }
-li.border-bottom:hover{border-bottom: 3px solid grey;}
+li.border-bottom:hover{border-bottom: 2px solid  grey;}
 
-.login{line-height: 5em;
-    padding: 0 2em;}
+.login{line-height: 4em;
+    padding: 0 1em;}
+
+/* Pulsanti     */
 .button{
     background-color: #0061ff;
     color: white;
     border: none;
     padding: 0.5em 1.5em;
 }
-.button:hover{ opacity:0.7}
+.button:hover{opacity:0.7}
+
+/* Jumbotron */
+.jumbotron{
+    background-color: #b4d0e7 ;
+}
+.description{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.jumbo-col-sx{
+    width: 35%;
+    float: left;
+   
+}
+.jumbo-col-dx{
+    width: 65%;
+  float: left;
+}
+
+
+#jumbo{
+    max-width: 70%;
+    position: absolute;
+}
+.jumbo-col-sx>button{
+     margin: 2em 0 1em 0;
+    font-size: 0.9em;
+}
+.fa{
+    font-size: 2em;
+    color: black;
+    margin: 1em 0 2em; 
+}
+
+/* Testi */
+h1{
+    font-size: 3.7em;
+    width: 80%;
+    padding: 2em 0 0.5em;
+    margin: 0 auto;
+}
+
+.jumbo-col-sx>p{
+    font-weight: 600;
+    font-size: 0.85em;
+}
+
