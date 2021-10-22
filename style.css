@@ -106,10 +106,10 @@ h2{
 }
     
 /* Prima Sezione */
-.first-section{
+.section{
     width: 70%;
-     margin: 10em auto ;
-    }
+    margin: 10em auto 3em;
+}
 h1{
     font-size: 3.7em;
     width: 80%;
@@ -140,7 +140,6 @@ h1{
 /* Colonne */
 .col-section1{
     width: calc(89% / 3);
-    height: 500px;
     padding: 1em 0;
     float: left;
 }
@@ -175,7 +174,7 @@ h1{
 .first-list{padding: 0 1.8em;}
 .first-list li:first-child{
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: 800;
     padding-top: 2em;
 }
 .first-list li:nth-child(2){
@@ -225,3 +224,60 @@ h1{
     padding: 1em 0 0 0;
 }
 .second-list li:last-child{padding-bottom: 10em;}
+
+/* Sezione 2 */
+.sec2{margin-top: 4em;}
+.bottom-col{
+    width: 70%;
+    margin: 0 auto;
+}
+.bottom-col-sx{
+    width: 70%;
+    display: inline-block;
+}
+.bottom-col-dx{
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 2em;
+}
+.bottom-col-sx .first-list{padding-right:0;}
+.bottom-col-sx .first-list li:last-child{
+    color: black;
+    padding: 2.5em 0;
+}
+.bottom-col-dx .button{width: 100%;}
+
+/* Sezione 3 */
+.s3-col-sx{
+    width: 55%;
+    float: left;
+}
+.s3-col-dx{
+    width: 45%;
+    float: left;
+}
+.s3-col-sx img{max-width: 100%;}
+.s3-col-dx{
+    padding: 0 2em;
+}
+.s3-col-dx>p:first-of-type{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+.s3-col-dx>p{
+    font-weight: 600;
+    font-size: 0.85em;
+    padding-top: 1.5em;
+}
+.white-button{
+    background-color: white;
+    border: solid 1px black;
+    padding: 0.5em 1em;
+    margin-top: 2em;
+}
+.white-button:hover{
+    background-color: #0061ff;
+    color: white;
+    border: none;
+}
