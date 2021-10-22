@@ -9,6 +9,7 @@ html{
 }
 body{width: 100%;}
 
+/* Header */
 .header{
     position: fixed;
     background-color: white;
@@ -21,9 +22,6 @@ body{width: 100%;}
     display: table;
     clear: both;
 }
-main{width: 100%;}
-
-/* Float */
 .col-logo, .menu-sx{float: left;}
 .menu-dx, .login{float: right;}
 
@@ -36,7 +34,7 @@ main{width: 100%;}
     vertical-align: middle;
 }
 
-    /* Menu */
+/* Menu */
 li.border-bottom, li.hover-menu{
     list-style-type: none;
     display: inline-block;
@@ -55,8 +53,7 @@ li.border-bottom:hover{border-bottom: 2px solid grey;}
     line-height: 4em;
     padding: 0 1em;
 }
-
-/* Pulsanti     */
+/* Pulsante Header */
 .button{
     background-color: #0061ff;
     color: white;
@@ -64,11 +61,6 @@ li.border-bottom:hover{border-bottom: 2px solid grey;}
     padding: 0.5em 1.5em;
 }
 .button:hover{opacity:0.7}
-
-.features-button{       
-    font-size: 0.8em;
-    font-weight: 600;
-}
 
 /* Jumbotron */
 .jumbotron{
@@ -101,12 +93,28 @@ li.border-bottom:hover{border-bottom: 2px solid grey;}
     color: black;
     margin: 1em 0 2em; 
 }
+.jumbo-col-sx>p{
+    font-weight: 600;
+    font-size: 0.85em;
+}
 
 /* Sezioni */
-    /* Prima Sezione */
-    .first-section{
-        width: 70%;
-        margin: 10em auto ;
+main{width: 100%;}
+h2{
+    font-size: 2em;
+    line-height: 3em;
+}
+    
+/* Prima Sezione */
+.first-section{
+    width: 70%;
+     margin: 10em auto ;
+    }
+h1{
+    font-size: 3.7em;
+    width: 80%;
+    padding: 2em 0 0.5em;
+    margin: 0 auto;
     }
 .checkbox{
     height: 1em;
@@ -122,6 +130,14 @@ li.border-bottom:hover{border-bottom: 2px solid grey;}
     border: inset 5px #0061ff;
     cursor: pointer;
 }
+.checkbox-text{
+    vertical-align: middle;
+    line-height: 5em;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-right: 1em;
+}
+/* Colonne */
 .col-section1{
     width: calc(89% / 3);
     height: 500px;
@@ -131,72 +147,14 @@ li.border-bottom:hover{border-bottom: 2px solid grey;}
 .col-center{
     margin: 0 3em;
 }
-.fa-user{font-size: 1em;}
-.button-block{
-    text-align: center;
-    padding: 3em 0 2em;}
 
-.line{
-    color: silver;
-    width: 15%;
-    margin: 1.5em 0 2em 1em ;
-}
+/* Icone */
+.fa-user{font-size: 1em;}
+.fa-building{font-size: 1em;}
+.fa-check{color: #0061ff;}
+
 /* Lista della section 1 */
 .features{border: 1px solid lightgrey;}
-.features li{
-    list-style-type: none;
-    margin: 0 auto;
-    font-size: 0.7em;
-    font-weight: 600;
-    color: black;
-    padding: 1.5em 0 0 0;
-}
-.features ul{padding: 0 1em;}
-.features>li:first-child{
-    font-size: 1.2em;
-    font-weight: 700;
-    padding-top: 2em;
-}
-.second-list ul{padding: 0 1em;}
-.second-list>li{
-    list-style-type: none;
-    margin: 0 auto;
-    font-size: 0.7em;
-    font-weight: 600;
-    color: black;
-    padding: 1.5em 0 0 0;
-}
-.second-list>li:last-child{
-    padding-bottom: 10em;
-}
-.fa-check{
-    color: #0061ff;
-}
-/* Testi */
-h1{
-    font-size: 3.7em;
-    width: 80%;
-    padding: 2em 0 0.5em;
-    margin: 0 auto;
-}
-    /* Paragrafo del jumbotron */
-.jumbo-col-sx>p{
-    font-weight: 600;
-    font-size: 0.85em;
-}
-
-    /* Testo della section 1 */
-h2{
-    font-size: 2em;
-    line-height: 3em;
-}
-.checkbox-text{
-    vertical-align: middle;
-    line-height: 5em;
-    font-size: 0.8em;
-    font-weight: 600;
-    margin-right: 1em;
-}
 .col-title{
     font-size: 0.8em;
     font-weight: 600;
@@ -205,20 +163,67 @@ h2{
     line-height: 3em;
     vertical-align:middle;
 }
-.features>li:nth-child(2){
+/* Prima Lista */
+.first-list li{
+    list-style-type: none;
+    margin: 0 auto;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: black;
+    padding: 1.5em 0 0 0;
+}
+.first-list{padding: 0 1.8em;}
+.first-list li:first-child{
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-top: 2em;
+}
+.first-list li:nth-child(2){
     font-size: 0.8em;
     font-weight: 700;
     padding: 1em 0 0 0;
 }
-.features>li:nth-child(3){
+.first-list li:nth-child(3){
     font-size: 0.7em;
     font-weight: 600;
     color: silver;
     padding: 1em 0 0 0;
 }
+/* Pulsante fra le liste */
+.features-button{       
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.button-block{
+    text-align: center;
+    padding: 3em 0 2em;}
+
+.line{
+    color: lightgrey;
+    width: 15%;
+    margin: 1.5em 0 2em 2em ;
+}
 .features>p{
     font-size: 0.7em;
     font-weight: 600;
-    padding: 0 1.3em;
+    padding: 0 2.5em;
 }
 .features>p>a{color: #0061ff;}
+/* Seconda lista */
+.second-list{padding: 0 1.8em;}
+.second-list li{
+    list-style-type: none;
+    margin: 0 auto;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: black;
+    padding: 1.5em 0 0 0;
+}
+.second-list li:first-child{
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 1em 0 0 0;
+}
+.second-list li:last-child{
+    padding-bottom: 10em;
+}
