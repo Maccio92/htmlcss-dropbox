@@ -43,7 +43,7 @@ li.border-bottom, li.hover-menu{
     line-height: 3.8em;
     margin-right: 1em;  
 }
-.border-bottom a, .hover-menu a {
+.border-bottom a {
     text-decoration: none;
     color: black ;
     font-weight: 600;
