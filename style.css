@@ -99,7 +99,8 @@ li.border-bottom:hover{border-bottom: 2px solid grey;}
 }
 
 /* Sezioni */
-main{width: 100%;}
+main{width: 100%;
+padding-top: 5em;}
 h2{
     font-size: 2em;
     line-height: 3em;
@@ -108,7 +109,7 @@ h2{
 /* Prima Sezione */
 .section{
     width: 70%;
-    margin: 10em auto 3em;
+    margin: 5em auto;
 }
 h1{
     font-size: 3.7em;
@@ -138,7 +139,7 @@ h1{
     margin-right: 1em;
 }
 /* Colonne */
-.col-section1{
+.col-section{
     width: calc(89% / 3);
     padding: 1em 0;
     float: left;
@@ -280,4 +281,21 @@ h1{
     background-color: #0061ff;
     color: white;
     border: none;
+}
+
+/* Sezione 4 */
+.col-section img{
+    max-width: 100%;
+}
+.col-center{
+    margin: 0 3em;
+}
+.text-section-4>p:first-of-type{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+.text-section-4>p{
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-top: 1.5em;
 }
