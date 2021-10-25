@@ -424,3 +424,17 @@ main{
     color: white;
     border: none;
 }
+.faq li{
+    list-style-type: none;
+    padding: 1em 0;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+.fa-chevron-down{
+    display: inline-block;
+    padding-right: 1em;
+}
+
+/* .faq li:hover{
+
+} */
