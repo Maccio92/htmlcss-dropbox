@@ -162,11 +162,10 @@ main{
 }
 /* Colonne */
 .col-section{
-    width: calc(89% / 3);
-    padding: 1em 0;
+    width: calc(92% / 3);
 }
 .col-center{
-    margin: 0 3em;
+    margin: 0 4%;
 }
 
 /* Icone */
@@ -179,7 +178,6 @@ main{
 .fa-check{
     color: #0061ff;
 }
-
 /* Lista della section 1 */
 .features{
     border: 1px solid lightgrey;
@@ -262,9 +260,6 @@ main{
 }
 
 /* Sezione 2 */
-.sec2{
-    margin-top: 4em;
-}
 .bottom-col{
     width: 70%;
     margin: 0 auto;
@@ -319,9 +314,6 @@ main{
 .col-section img{
     max-width: 100%;
 }
-.col-center{
-    margin: 0 3em;
-}
 /* Sezione 5 */
 .large-section{
     width: 100%;
@@ -347,13 +339,21 @@ main{
     width: 30%;
 }
 .row-1 img, .row-2 img{
-    width: 100%;
+    width: 100%; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding: 3em;
-    
 }
 .square{
-    width: calc(100% / 2);
-    height: 175px;
+    width: 50%;
+    position: relative;
+}
+.square::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 #square-1{    
     background-color: #a2d39b;
@@ -373,8 +373,12 @@ main{
     filter: invert(100%);
 }
 .s5-col-center{
-    padding: 3em;
-    width: 40%;
+    max-width: 40%;     
+}
+.content{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
 }
 .s5-col-center img{
     max-width: 30%;
@@ -443,11 +447,9 @@ main{
 .footer-width{
     padding: 4em 8em;
     background-color: black;
-    /* height: 400px; */
 }
 .sub-section{
     width: 100%;
-    
 }
 footer ul{ 
     width: 20%;
