@@ -36,6 +36,37 @@ p{
 .float-right{
     float: right;
 }
+.clearfix::after{    
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Icone */
+.fa-user{
+    font-size: 1em;
+}
+.fa-building{
+    font-size: 1em;
+}
+.fa-check{
+    color: #0061ff;
+}
+.ico{
+    width: 1em;
+}
+.fa-sort-up{
+    vertical-align: sub;
+}
+.fa-arrow-down{
+    font-size: 2em;
+    color: black;
+    margin: 1em 0 2em; 
+} 
+.fa-chevron-down{
+    display: inline-block;
+    padding-right: 1em;
+}
 
 /* Header */
 .header{
@@ -46,11 +77,6 @@ p{
     z-index: 10;
     top: 0;
     left: 0;
-}
-.clearfix::after{    
-    content: "";
-    display: table;
-    clear: both;
 }
 .col-logo{
     line-height: 3.8em;
@@ -82,6 +108,26 @@ li.border-bottom:hover{
     line-height: 4em;
     padding: 0 1em;
 }
+/* Menu a scomparsa */
+.menu-hidden{
+    display: none;
+}
+.menu-hidden li{
+    width: 5em;
+    background-color: white;
+    font-size: 0.7em;
+    position: relative;
+    list-style-type: none;
+}
+.menu-hidden li:hover{
+    border-bottom: 2px solid grey;
+}
+li.border-bottom:hover .menu-hidden{
+    display:block;
+    position: absolute;
+    margin-top: 0.1em;
+}
+
 /* Pulsante Header */
 .button{
     background-color: #0061ff;
@@ -108,7 +154,6 @@ li.border-bottom:hover{
 .jumbo-col-dx{
     max-width: 65%;
 }
-
 #jumbo{
     width: 70%;
     position: absolute;
@@ -116,11 +161,6 @@ li.border-bottom:hover{
 .jumbo-col-sx>button{
      margin: 2em 0 1em 0;
     font-size: 0.9em;
-}
-.fa-arrow-down{
-    font-size: 2em;
-    color: black;
-    margin: 1em 0 2em; 
 }
 .cancel-text{
    padding-top: 0;
@@ -162,27 +202,13 @@ main{
 }
 /* Colonne */
 .col-section{
-    width: calc(92% / 3);
-    
+    width: calc(92% / 3); 
 }
 .col-center{
     margin: 0 4%;
 }
 
-/* Icone */
-.fa-user{
-    font-size: 1em;
-}
-.fa-building{
-    font-size: 1em;
-}
-.fa-check{
-    color: #0061ff;
-}
-.ico{
-    width: 1em;
-}
-    
+ 
     
 /* Lista della section 1 */
 .features{
@@ -328,6 +354,7 @@ main{
 .col-section img{
     max-width: 100%;
 }
+
 /* Sezione 5 */
 .large-section{
     width: 100%;
@@ -452,10 +479,7 @@ main{
     font-size: 0.8em;
     font-weight: 800;
 }
-.fa-chevron-down{
-    display: inline-block;
-    padding-right: 1em;
-}
+
 .hidden{
     padding-top: 1em;
     font-weight: 500;
@@ -507,6 +531,4 @@ footer hr{
     width: 10%;
     margin-top: 5em;
 }
-.fa-sort-up{
-    vertical-align: sub;
-}
+
