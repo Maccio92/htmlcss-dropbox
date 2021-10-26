@@ -178,6 +178,10 @@ main{
 .fa-check{
     color: #0061ff;
 }
+.ico{
+    width: 1em;
+    margin-right: 1em;
+}
 /* Lista della section 1 */
 .features{
     border: 1px solid lightgrey;
