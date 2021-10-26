@@ -378,7 +378,9 @@ main{
     filter: invert(100%);
 }
 .s5-col-center{
-    max-width: 40%;     
+    max-width: 40%; 
+    height: 400px ; 
+    overflow: auto;   
 }
 .content{
     width: 100%;
