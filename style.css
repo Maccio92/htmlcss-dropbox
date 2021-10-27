@@ -24,7 +24,10 @@ h3{
     font-size: 1.2em;
     font-weight: 800;
 } 
-
+h4{
+    font-size: 0.8em;
+    font-weight: 800;
+}
 p{
     font-weight: 600;
     font-size: 0.8em;
@@ -222,7 +225,9 @@ main{
     line-height: 3em;
     vertical-align:middle;
 }
-
+.features-title{
+    padding: 1em 1em 0;
+}
 /* Prima Lista */
 .first-list li{
     list-style-type: none;
@@ -236,16 +241,6 @@ main{
     padding: 0 1em;
 }
 .first-list li:first-child{
-    font-size: 1.2em;
-    font-weight: 800;
-    padding-top: 2em;
-}
-.first-list li:nth-child(2){
-    font-size: 0.8em;
-    font-weight: 800;
-    padding: 1em 0 0 0;
-}
-.first-list li:nth-child(3){
     font-size: 0.7em;
     font-weight: 600;
     color: silver;
@@ -279,7 +274,7 @@ main{
 }
 /* Seconda lista */
 .second-list{
-    padding: 0 1.5em;
+    padding: 0 1em;
     height: 350px;
 }
 .second-list li{
@@ -289,11 +284,6 @@ main{
     font-weight: 600;
     color: black;
     padding: 1.5em 0 0 0;
-}
-.second-list li:first-child{
-    font-size: 0.8em;
-    font-weight: 800;
-    padding-top: 1em;
 }
 .second-list li:last-child{
     padding-bottom: 10em;
@@ -314,12 +304,14 @@ main{
     vertical-align: top;
     padding-top: 2em;
 }
-.bottom-col-sx .first-list{
-    padding-right:0;
+.bottom-list{
+    padding:1.5em 0 1.5em 1.5em;
 }
-.bottom-col-sx .first-list li:last-child{
-    color: black;
-    padding: 2.5em 0;
+.bottom-list p{
+    font-size: 0.7em;
+}
+.bottom-list h4{
+    padding-top: 1em;
 }
 .bottom-col-dx .button{
     width: 100%;
@@ -355,91 +347,7 @@ main{
     max-width: 100%;
 }
 
-/* Sezione 5 */
-.large-section{
-    width: 100%;
-}
-.title-section{ 
-    width:70%;
-    margin: 0 auto;
-}
-.title-section h2{
-    line-height: 1.5em;
-    width: 53%;
-}
-.section-5{
-    margin-top: 2em;
-}
-.link-section-5{
-    font-size: 0.8em;
-    font-weight: 600;
-    text-decoration: underline;
-    color: #0061ff;
-}
-.s5-col-sx, .s5-col-dx{
-    width: 30%;
-}
-.row-1 img, .row-2 img{
-    width: 100%; 
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 3em;
-}
-.square{
-    width: 50%;
-    position: relative;
-}
-.square::after{
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-#square-1{    
-    background-color: #a2d39b;
-    border: solid 8px #d0e9cd;
-}
-#square-2{
-    background-color: #61082b;
-}
-#square-3{
-    background-color: #0093ce;
-}
-#square-4{
-    background-color: #ff1c1c;
-}
 
-.invert{
-    filter: invert(100%);
-}
-.s5-col-center{
-    max-width: 40%; 
-    height: 34.7vh ; 
-    overflow: auto;   
-    /* background-color: blueviolet; */
-}
-.content{
-    width: 100%;
-    margin: 0 auto;
-    padding: 10%;
-}
-.s5-col-center img{
-    max-width: 30%;
-    padding-bottom: 3em;
-}
-#square-5{
-    background-color: #d5001f;
-}
-#square-6{
-    background-color: #b4d0e7;
-}
-#square-7{
-    background-color: #0d2481;
-}
-#square-8{
-    background-color: #ffd830;
-}
 
 /* Sezione 6 */
 .section6-title{
@@ -476,7 +384,6 @@ main{
 .faq li{
     list-style-type: none;
     padding: 1em 0;
-    font-size: 0.8em;
     font-weight: 800;
 }
 
@@ -506,7 +413,7 @@ main{
 .sub-section{
     width: 100%;
 }
-footer ul{ 
+.footer-list{ 
     width: 20%;
 }
 footer ul li{
@@ -519,11 +426,10 @@ footer a{
     color: white;
     text-decoration: none;
 }
-footer ul li:first-child{
+footer h4{
     color: white;
-    font-size: 1.1em;
-    font-weight: 700;
     padding-bottom: 1em;
+    font-size: 1em;
 }
 footer hr{
     background-color: grey;
